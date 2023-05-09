@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE>Santa's Slay</TITLE>
+<link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+/*Style the containers for the slideshow container */
+.slideshow-container > div {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+}
+.slideshow-container > div > img {
+    height: 100%;
+}
+
+
+/*Style the footer to show up under the two columns on each tab */
+.footer{
+width:100%;
+text-align: left;
+padding:0px;
+background-color:white;
+color:black;
+clear:both;
+}
+
+
+/* Create two unequal columns that float next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  }
+
+.left {
+  width: 65%;
+}
+
+.right {
+  width: 35%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* Set height of body and the document to 725px*/
+body, html {
+  height: 725px;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: White;
+  color: Black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 13%;
+}
+
+.tablink:hover {
+  background-color: CornflowerBlue;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 70px;
+  height: 100%;
+}
+
+#Intro {background-color: white;}
+#Day1 {background-color: white;}
+#Day2 {background-color: white;}
+#Day3 {background-color: white;}
+#Day4 {background-color: white;}
+#Day5 {background-color: white;}
+#Arrest {background-color: white;}
+
+/* Style the image to fit within the column container */
+.contain {object-fit: contain;}
+</style>
+
+</head>
+<body>
+<H1><Center><img src="Images/ScarySanta3.jpg" alt="Scary Santa" style="float:left;height:100px">Santa's Slay: A Murder Mystery</Center></H1><br>
+<button class="tablink" onclick="openPage('Intro', this, 'DeepSkyBlue')" id="defaultOpen" >Intro</button>
+<button class="tablink" onclick="openPage('Day1', this, 'DeepSkyBlue')">Day 1</button>
+<button class="tablink" onclick="openPage('Day2', this, 'DeepSkyBlue')">Day 2</button>
+<button class="tablink" onclick="openPage('Day3', this, 'DeepSkyBlue')">Day 3</button>
+<button class="tablink" onclick="openPage('Day4', this, 'DeepSkyBlue')">Day 4</button>
+<button class="tablink" onclick="openPage('Day5', this, 'DeepSkyBlue')">Day 5</button>
+<button class="tablink" onclick="openPage('Arrest', this, 'DeepSkyBlue')">The Arrest</button>
+
+<div id="Intro" class="tabcontent">
+ <!--  Beginning of 2 Column Tab  -->
+				<div class="row">
+					<div class="column left">
+	<h2><p>What Happened to Jackson Walker?</p></h2>
+	<h4>Jackson Walker attended his department's holiday party and Secret Santa gift exchange on Thursday, and then he called in sick on Friday.</h4>
+	<h4>When he didn't show up or call on Monday, a co-worker went to check on him and found him dead.</h4>
+	<h4>Was this 29-year-old, generally healthy man sicker than anyone realized, or did someone make sure he didn't live to see Christmas?</h4>
+
+	<!-- Text and Links on Left Side Ends Here -->
+						</div>
+					<div class="column right">
+						<H2><Center>The Crime Scene </Center></H2>						
+						
+							  <img src="Images/santa-scene-victim.jpg" alt="Crime Scene Photo" width="100%">							  							  
+											
+					</div>
+					<!-- Closes the Right Column -->
+				</div>
+				<!--  Closes off the Row  -->
+</div>
+<div id="Day1" class="tabcontent">
+ <!--  Beginning of 2 Column Tab  -->
+				<div class="row">
+					<div class="column left">
+						<!-- Text and Links on Left Side Begins Here -->
+						<h2>Investigation Day 1</h2>
+						<h4>When <a href="Day1/JacksonWalkerBio.pdf" target="_blank" Title="Victim's Bio">Jackson Walker</a> didn't show up for work after being out sick, the co-worker who went to check on him found him dead and <a href="Day1/IncidentReport_Full.pdf" target="_blank" Title="Police Incident Report">called 911</a>. After Detectives Murphy and Parker examined the scene, they asked <a href="Day1/AdamCooperBio.pdf" target="_blank" Title="Adam Cooper's Bio">the co-worker</a> to tell them <a href="Day1/AdamCooperInterview.pdf" target="_blank" Title="Adam Cooper's Police Interview">what brought him</a> to Jackson's home that morning.</h4>
+						<h4>Investigators spoke to <a href="Day1/CanvassOfJacksonWalkersNeighbors.pdf" target="_blank" Title="Canvass Of Jackson Walker's Neighbors">Jackson's neighbors</a> and members of his <a href="Day1/SummaryWalkerFamilyInterview.pdf" target="_blank" Title="Summary of Family Interviews">immediate family</a> to find out more about what had been happening in Jackson's life lately.</h4>
+						<h4>That evening, the <a href="Day1/JoshuaWalkerInterview.pdf" target="_blank" Title="Joshua Walker's Police Interview">detectives caught up with</a> Jackson's other <a href="Day1/JoshuaWalkerBio.pdf" target="_blank" Title="Joshua Walker's Bio">brother, Joshua</a>.</h4>
+						<h4>The Oxford Weekly Planet <a href="Day1/ManDiesUnexpecedly.pdf" target="_blank" Title="Daily Crime Beat Article">told the community</a> about the mysterious death.</h4>
+						<p><H4>Link to Assignment for Investigation Day 1</H4></p>
+						<!-- Text and Links on Left Side Ends Here -->
+					</div>
+					<div class="column right">
+						<H2><Center>The Walker Family</Center></H2>
+						<iframe src="Day1/day1slideshow.html" style="height:500px;width:100%;border:none;" title="Iframe Example"></iframe>
+					</div>
+					<!-- Closes the Right Column -->
+				</div>
+				<!--  Closes off the Row  -->
+<!-- Closes the Tab -->
+</div>
+<div id="Day2" class="tabcontent">
+ <!--  Beginning of 2 Column Tab  -->
+				<div class="row">
+					<div class="column left">
+					<!-- Text and Links on Left Side Begins Here -->
+  <h2>Investigation Day 2</h2>
+  <h4>The next morning, CSU sent the detectives a <a href="Day2/EvidenceInventory.pdf" target="_blank" Title="Evidence Inventory" >preliminary inventory</a> of evidence collected at the scene.</h4>
+  <h4>Then Detective Murphy and Parker went over to the university to talk to <a href="Day2/SavannaHollisInterview.pdf" target="_blank" Title="Savanna Hollis's Police Interview" >Jackson's boss</a> and <a href="Day2/CanvassWalkerColleagues.pdf" target="_blank" Title="Summary of Police Interviews with Jackson Walker's Co-Workers" >his co-workers</a>.</h4>
+  <h4>After lunch, the detectives sat down with Jackson's <a href="Day2/SylviaMasonBio.pdf" target="_blank" Title="Sylvia Mason Bio" >friend Sylvia</a> to learn more about him and <a href="Day2/SylviaMasonInterview.pdf" target="_blank" Title="Police Interview with Sylvia Mason" >their relationship</a>.</h4>
+  <h4>While other investigators went to talk to <a href="Day2/CanvassMasonColleagues.pdf" target="_blank" Title="Summary of Police Interviews with Sylvia Mason's Co-Workers" >Sylvia's co-workers</a>, Detectives Murphy and Parker visited one of <a href="Day2/LarissaRobbinsInterview.pdf" target="_blank" Title="Police Interview with Larissa Robbins" >Jackson's neighbors</a>.</h4>
+  <h4>Late that afternoon, the detectives got their first look at <a href="Day2/WalkerPhoneRecords.pdf" target="_blank" Title="Jackson Walker's Call and Text Records" >Jackson's call and text records</a> for the weekend he died.</h4>
+  <p><h4>Investigation Day 2 Assignment</h4></p>
+					</div>
+					<!-- Ends text and links on Left column -->
+					<div class="column right">
+					<!-- Begins the Right Column -->
+						<H2><Center>Jackson Walker's Co-Workers</Center></H2>
+						<iframe src="Day2/day2slideshow.html" style="height:475px;width:100%;border:none;" title="Iframe Example"></iframe>						
+					</div>
+					<!-- Closes the Right Column -->				
+				</div>
+				<!--  Closes off the Row  -->
+<!-- End of 2 column Tab -->
+</div>
+<div id="Day3" class="tabcontent">
+				<div class="row">
+					<div class="column left">
+					<!-- Text and Links on Left Side Begins Here -->
+  <h2>Investigation Day 3</h2>
+  <h4>Detectives Murphy and Parker talked to <a href="Day3/WillSandsInterview.pdf" target="_blank" Title="Will Sands's Police Interview" >a local bartender</a> to find out if he knew anything about Jackson or the people in his life.</h4>
+
+<h4>Meanwhile, YCSD investigators tried to corroborate the whereabouts of people close to Jackson on the weekend he died, including <a href="Day3/AlibiCheckJoshWalker.pdf" target="_blank" Title="Alibi Check - Josh Walker" >his brother Josh</a>, <a href="Day3/AlibiCheckSylviaMason.pdf" target="_blank" Title="Alibi Check - Sylvia Mason" >his friend Sylvia</a>, and <a href="Day3/AlibiCheckAdamCooper.pdf" target="_blank" Title="Alibi Check - Adam Cooper" >his co-worker Adam</a>.</h4>
+
+<h4>Late that afternoon, the detectives received a <a href="Day3/ForensicAnalysis.pdf" target="_blank" Title="Preliminary Forensic Results" >preliminary report</a> from the crime lab and an interesting phone call <a href="Day3/CoronersInfo.pdf" target="_blank" Title="Information From The Coroner" >from the coroner's office</a>.</h4>
+
+<h4>Safety Data Sheets for the chemicals listed in the Forensic Results.<h4>
+<h4>Investigation Day 3 Assignment</h4>
+					</div>
+					<!-- Ends text and links on Left column -->
+				<div class="column right">
+				<!-- Begins the Right Column -->
+						<H2><Center>Victim's Friends and Neighbors</Center></H2>
+						<iframe src="Day3/day3slideshow.html" style="height:475px;width:100%;border:none;" title="Iframe Example"></iframe>					
+				</div>
+				<!--  Closes off the Right Column -->
+				<!--  Closes off the Row -->
+				</div>
+<!--  Closes off the tab  -->				
+</div>
+<div id="Day4" class="tabcontent">
+				<div class="row">
+					<div class="column left">
+					<!-- Text and Links on Left Side Begins Here -->
+  <h2>Investigation Day 4</h2>
+  <h4>The following morning, Detectives Murphy and Parker met with Jackson's <a href="Day4/JoshWalkerInterview#2.pdf" target="_blank" Title="Josh Walker's Second Interview" >brother Josh</a> again.</h4>
+  
+<h4>Then they asked Jackson's <a href="Day4/AdamCooperInterview#2.pdf" target="_blank" Title="Adam Cooper's Second Interview" >co-worker Adam</a> and his <a href="Day4/SylviaMasonInterview#2.pdf" target="_blank" Title="Sylvia Mason's Second Interview" >friend Sylvia</a> to come in again to answer some open questions.</h4>
+
+<h4>That afternoon, the detectives got a <a href="Day4/MasonSearchWarrant.pdf" target="_blank" Title="Mason - Search Warrant" >warrant to search</a> one of their suspect's residences. Some evidence discovered there led them to get <a href="Day4/WalkerSearchWarrant.pdf" target="_blank" Title="Walker - Search Warrant" >another warrant</a> to search an additional suspect's residence.</h4>
+
+<h4>Investigation Day 4 Assignment</h4>
+					</div>
+					<!-- Ends text and links on Left column -->
+				<div class="column right">
+				<!-- Begins the Right Column -->
+						<H2><Center>Sylvia Mason's Co-Workers</Center></H2>
+						<iframe src="Day4/day4slideshow.html" style="height:475px;width:100%;border:none;" title="Iframe Example"></iframe>					
+				</div>
+				<!--  Closes off the Right Column  -->
+			<!-- Closes off the Row -->	
+			</div>	
+<!--  Closes off the tab  -->
+</div>
+<div id="Day5" class="tabcontent">
+				<div class="row">
+					<div class="column left">
+					<!-- Text and Links on Left Side Begins Here -->
+  <h2>Investigation Day 5</h2>
+  <h4>When the crime lab sent over the <a href="Day5/FullForensicAnalysis.pdf" target="_blank" Title="Full Forensic Report" >preliminary report</a> on the search evidence, Detectives Murphy and Parker made a plan to finally get the truth from their suspects.</h4>
+<h4>Investigation Day 5 Assignment</h4>
+					</div>
+					<!-- Ends text and links on Left column -->
+				<div class="column right">
+				<!-- Begins the Right Column -->
+						<H2><Center>Select Evidence Items from Forensic Analysis</Center></H2>
+						<iframe src="Day5/day5slideshow.html" style="height:475px;width:100%;border:none;" title="Iframe Example"></iframe>					
+				</div>
+				<!--  Closes off the Right Column  -->
+			<!-- Closes off the Row -->	
+			</div>	
+<!--  Closes off the tab  -->
+</div>
+<div id="Arrest" class="tabcontent">
+				<div class="row">
+					<div class="column left">
+					<!-- Text and Links on Left Side Begins Here -->
+  <h2>The Arrest</h2>
+  <h4>The <a href="Day6/Suspect1Interviewpart1.pdf" target="_blank" Title="Suspect 1 Interview Part 1" >first suspect</a> denied knowing anything about the other suspect or how Jackson died. <a href="Day6/Suspect2Interviewpart1.pdf" target="_blank" Title="Suspect 2 Interview Part 1" >The second one</a> did the same until hearing about some of the evidence compelled an admission that didn't surprise the detectives but wasn't enough to make an arrest … yet.</h4>
+<h4>So Detectives Murphy and Parker went back to <a href="Day6/Suspect1Interviewpart2.pdf" target="_blank" Title="Suspect 1 Interview Part 2" >the first suspect</a> to get their response to the second one's admission. Then they <a href="Day6/Suspect2Interviewpart2.pdf" target="_blank" Title="Suspect 2 Interview Part 2" >asked the second suspect</a> if they wanted to comment on the other one's claims.</h4>
+<h4>Later that afternoon, the <a href="ArrestArticle.pdf" target="_blank" Title="Article Detailing The Arrest" >Oxford Weekly Planet's Crime Beat</a> let the community know how it all played out.</h4>
+<h4>Investigation Day 6 Assignment</h4>
+					</div>
+					<!-- Ends text and links on Left column -->
+				<div class="column right">
+				<!-- Begins the Right Column -->
+						<H2><Center>Suspects Arrested!</Center></H2>
+						<iframe src="Day6/day6slideshow.html" style="height:475px;width:100%;border:none;" title="Iframe Example"></iframe>					
+				</div>
+				<!--  Closes off the Right Column  -->
+			<!-- Closes off the Row -->	
+			</div>	
+<!--  Closes off the tab  -->
+</div>
+<script>
+
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+ <footer>
+<hr style="height:1px;border-width:0;color:black;background-color:black">
+<p style="padding-left: 50px;">  Author: Christene Lohse   
+<a href="mailto:christene.lohse@gmail.com" style="padding-left: 30px;">Christene.Lohse@Gmail.com</a></p>
+</footer>  
+</body>
+</html> 
